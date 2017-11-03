@@ -196,7 +196,7 @@ function Install-GuideApp {
 }
 
 function Get-CustomScriptConfig {
-    $config = (ConvertFrom-Json (Get-Content 'C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.9\RuntimeSettings\0.settings' -Raw)).runtimeSettings[0].handlerSettings
+    $config = (ConvertFrom-Json (Get-Content 'C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.8\RuntimeSettings\0.settings' -Raw)).runtimeSettings[0].handlerSettings
 
     $public = $config.publicSettings
     $private = $null
